@@ -7,7 +7,7 @@ For further reference, please consider the following sections:
 
 # Coding Exercise Demo For Element  #
 
-## Task:##
+## Task ##
 Imagine a modular insurance product. People can choose from 4 modules. Each module has a different selectable coverage and a different mathematical risk.
 
 These are the modules:
@@ -36,7 +36,7 @@ I have used Hexagonal/ Port and Adapter Design Architecture for this Demo
 
 This Project has Four Main Modules
 
- • # domain # (All Domain Models and Services)
+ • ## domain ## (All Domain Models and Services)
  
  this module contain all business logic and domain models . I have create Four Models Risk,Product,Coverage,Order. Just to simply I have not created User domain and services .
  
