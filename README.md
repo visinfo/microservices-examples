@@ -35,25 +35,40 @@ I have used Hexagonal/ Port and Adapter Design Architecture for this Demo
  - [Ports-And-Adapters / Hexagonal Architecture](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html)
 
 This Project has Four Main Modules
+
  • domain (All Domain Models and Services)
+ 
  this module contain all business logic and domain models . I have create Four Models Risk,Product,Coverage,Order. Just to simply I have not created User domain and services .
+ 
  • in-memory-db-adapter(Storing data in memory )
+ 
  This module  Storing Product Configurations and Orders for User .To store these entities I  have used HashMap (just to avoid DB  dependencies)
+ 
  • rest-api-adapter
+ 
  This Module Expose Rest Endpoints.
-if you just start the application and navigate to `http://localhost:8091/swagger-ui.html`. There you'll find a nice API documentation thanks to Swagger..
+ 
+if you just start the application and navigate to `http://localhost:8091/swagger-ui.html`. There you'll find a nice API documentation thanks to Swagger.
+
   Order just open docs/swagger.json  in swagger editor .
  ![Swagger Documentation](docs/swagger.json)
+ 
  .application
+ 
  this module configure all beans and dependencies
 
 ## Getting Started ##
 
 Steps
+
 1. Extract ZIP
+
 2. cd demo/
+
 3. Build Application   mvn clean package
+
 4. Start application with  below commnand(make sure you have 8091 port opened)
+
 java -jar application/target/application-0.0.1-SNAPSHOT.jar
 
 
